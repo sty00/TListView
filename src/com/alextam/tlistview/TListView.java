@@ -90,6 +90,7 @@ public class TListView extends ListView implements OnScrollListener{
 		setOnScrollListener(this);
 	}
 	
+	//初始化头部View
 	private void initHeaderView()
 	{
 		headerView = LayoutInflater.from(mContext).inflate(R.layout.lv_header, null);
@@ -122,6 +123,7 @@ public class TListView extends ListView implements OnScrollListener{
 	public void onScrollStateChanged(AbsListView view, int scrollState) 
 	{ }
 	
+	//初始化底部View
 	private void initFooterView()
 	{
 		footerView = LayoutInflater.from(mContext).inflate(R.layout.lv_footer, null);
@@ -513,6 +515,7 @@ public class TListView extends ListView implements OnScrollListener{
 		}
 	}
 	
+	/** 获取列表拖曳模式 **/
 	public PULL_MODE getTListViewMode()
 	{
 		return this.pullMode;
